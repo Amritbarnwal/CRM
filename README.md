@@ -22,5 +22,52 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
 
-   ```bash
    git clone https://github.com/your-username/my-questionnaire-app.git
+
+2. Navigate to the project directory:
+
+   cd my-questionnaire-app
+
+3. Install the dependencies:
+
+   npm install
+
+4. Start the development server:
+
+   npm run dev
+
+5. Open your browser and navigate to http://localhost:3000.
+
+## Folder Structure
+
+my-questionnaire-app/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── components/
+│   │   ├── Timer.jsx
+│   │   ├── Question.jsx
+│   │   └── OptionButton.jsx
+│   ├── App.jsx
+│   ├── styles.css
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
+
+## Code Structure
+
+- **Timer.jsx**: Component that manages the countdown timer.
+- **Question.jsx**: Displays the current question and handles user interaction.
+- **OptionButton.jsx**: Represents each option button in the questionnaire.
+- **App.jsx**: Main application component that integrates all components and manages state.
+
+## Styling
+
+The application uses CSS for styling, creating a clean and user-friendly interface with a modern dark theme.
+
+
+
