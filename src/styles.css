@@ -1,0 +1,141 @@
+/* styling */
+
+.app-container {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #f7fafc, #dbe7ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* timer  */
+
+  .timer-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .timer-progress {
+    height: 15px;
+    background-color: #4caf50;
+    transition: width 1s linear;
+  }
+  
+  /* question */
+
+  .question-container {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  
+  /* options  */
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+   /* buttons-- submit  and next  */
+
+  button.submit-btn {
+    background-color: #008cba;
+    color: #fff;
+  }
+  
+  button.submit-btn:hover {
+    background-color: #007ba7;
+  }
+  
+  button.next-btn {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  button.next-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* answers vcorrect and incorrect  */
+
+  .option.correct {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .option.incorrect {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .option.selected {
+    border: 2px solid #007ba7;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .popup button {
+    background-color: #007ba7;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup button:hover {
+    background-color: #005f76;
+  }
+  
